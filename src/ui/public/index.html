@@ -127,6 +127,49 @@
     color: var(--text-dim);
   }
 
+  .donate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #7c6fff22, #a78bfa22);
+    border: 1px solid #7c6fff44;
+    color: #a78bfa;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .donate-btn:hover {
+    background: linear-gradient(135deg, #7c6fff33, #a78bfa33);
+    border-color: #7c6fff88;
+    color: #c4b5fd;
+    transform: translateY(-1px);
+  }
+
+  .brand-link {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: center;
+  }
+
+  .brand-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .brand-link a:hover {
+    color: #a78bfa;
+    text-decoration: underline;
+  }
+
   .add-project-btn {
     width: 100%;
     display: flex;
@@ -536,10 +579,16 @@
   </div>
 
   <div class="sidebar-footer">
-    <div style="margin-bottom: 4px;">🔒 All data is local</div>
-    <div>~/.vlt/ · AES-256-GCM</div>
+    <a href="https://whop.com/bwanaerp/buy-me-ai-credits" target="_blank" class="donate-btn">
+      ☕ Support vlt
+    </a>
+    <div class="brand-link">
+      A <a href="https://bwanaerp.com" target="_blank">BwanaERP</a> tool
+    </div>
+    <div style="margin-top:8px; font-size:10px; color:var(--text-dim);">🔒 Local · AES-256-GCM</div>
   </div>
 </aside>
+
 
 <!-- Main -->
 <main class="main">
@@ -552,10 +601,17 @@
 
   <div class="content" id="content">
     <div class="welcome">
-      <div style="font-size:56px; margin-bottom:20px;">🔐</div>
-      <h2>vlt</h2>
-      <p>Select a project from the sidebar to view its secrets, or add a new key to get started.</p>
-      <p style="margin-top:12px; font-size:13px;">Your vault is encrypted and lives only on this machine.</p>
+      <div style="font-family:var(--mono); font-size:52px; font-weight:700; color:var(--accent); letter-spacing:6px; margin-bottom:12px;">vlt</div>
+      <p style="font-size:13px; color:var(--text-dim); font-style:italic; margin-bottom:24px;">Your secrets are safe. For now.</p>
+      <p style="max-width:400px; line-height:1.7; color:var(--text-dim); font-size:14px;">Select a project from the sidebar to view its secrets, or hit <strong style="color:var(--text)">+ New project</strong> to get started.</p>
+      <div style="margin-top:32px; padding:20px 24px; background:var(--surface); border:1px solid var(--border); border-radius:12px; max-width:420px; text-align:left;">
+        <div style="font-size:10px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-dim); margin-bottom:12px;">Why vlt exists</div>
+        <p style="font-size:13px; color:var(--text-dim); line-height:1.7;">Every platform shows your API key once. Stripe, Supabase, Resend — once. You either saved it or you're deleting it and hoping nothing breaks.</p>
+        <p style="font-size:13px; color:var(--text-dim); line-height:1.7; margin-top:8px;">vlt is where you save it. Local. Encrypted. No account to lose, no cloud service to go down, no SaaS to start charging you.</p>
+        <div style="margin-top:14px; padding-top:14px; border-top:1px solid var(--border); font-size:12px; color:var(--text-dim);">
+          Built in Livingstone, Zambia 🇿🇲 · <a href="https://bwanaerp.com" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">BwanaERP</a>
+        </div>
+      </div>
     </div>
   </div>
 </main>
