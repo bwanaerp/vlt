@@ -20,7 +20,7 @@ No cloud. No account. No subscription. Just your password.
 ## Install
 
 ```bash
-git clone https://github.com/yourusername/vlt.git
+git clone https://github.com/bwanaerp/vlt.git
 cd vlt
 npm install
 npm link   # makes `vlt` available globally
