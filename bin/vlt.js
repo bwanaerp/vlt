@@ -33,12 +33,23 @@ const { promptPassword, promptPasswordConfirm } = require('../src/cli/prompt');
 // ─── Persona ────────────────────────────────────────────────────────────────
 const SARDONIC_LINES = [
   "Welcome back. The secrets are still secret. You're welcome.",
-  "Vault open. No one saw that.",
+  "Vault open. No one saw that. Except us. But we're encrypted.",
   "Ah, you remember your password. A rare skill among developers.",
   "All keys accounted for. Unlike that one Stripe key from 2022.",
   "Your secrets are safe. Unlike your git history.",
   "Still here. Still encrypted. Still judging your variable names.",
   "Unlocked. Try not to commit this to GitHub.",
+  "Back again. The vault missed you. Or it would, if it had feelings.",
+  "All good here. Unlike your .env file from the last project.",
+  "Ready. The keys are safe. Your deadlines, however, are your problem.",
+  "Open sesame. But encrypted. And without the sesame.",
+  "Vault unlocked. Please don't paste anything into Slack.",
+  "Still not on the cloud. Still not your problem when AWS goes down.",
+  "Keys loaded. No, you can't see them without the password. That was the whole point.",
+  "Secured. Unlike that time you shared your screen during a demo.",
+  "Access granted. We'd say we missed you but we don't store your feelings either.",
+  "Everything in order. Your Supabase URL is still here. Unlike your project deadline.",
+  "Decrypted. Don't screenshot this. Actually, don't screenshot anything.",
 ];
 
 function randomSarcasm() {
